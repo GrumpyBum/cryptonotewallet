@@ -1,33 +1,25 @@
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/cryptonotefoundation/cryptonotewallet.git
+git clone https://github.com/GrumpyBum/harrier.wallet.git
 ```
 
-**2. Modify `CryptoNoteWallet.cmake`**
- 
-```
-set(CN_PROJECT_NAME "furiouscoin")
-set(CN_CURRENCY_DISPLAY_NAME "FuriousCoin")
-set(CN_CURRENCY_TICKER "XFC")
-```
+**2. Set symbolic link to coin sources at the same level as `src`. For example:**
 
-**3. Set symbolic link to coin sources at the same level as `src`. For example:**
-
+From Git Clone Directory
 ```
-ln -s ../cryptonote cryptonote
+git submodule add https://github.com/GrumpyBum/harrier.wallet.git shc
 ```
 
-Alternative way is to create git submodule:
+**3. Build**
 
-```
-git submodule add https://github.com/cryptonotefoundation/cryptonote.git cryptonote
-```
-
-Replace URL with git remote repository of your coin.
-
-**4. Build**
-
+For Debian Systems
 ```
 mkdir build && cd build && cmake .. && make
+```
+
+For Windows Systems (Visual Studio Command Line Suite)
+```
+md build && cd build && cmake -G "Visual Studio 12" ..
+Build Solution in Visual Studio 2013 Community or 2013 Express
 ```
