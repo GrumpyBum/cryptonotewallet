@@ -17,8 +17,8 @@ include_directories(${CMAKE_BINARY_DIR}
     shc/src)
 
 if(WIN32)
-	set (Qt5Gui_DIR "C:\\Qt\\5.0.2\\msvc2012_64\\lib\\cmake\\Qt5Gui\\")
-	set (Qt5Widgets_DIR "C:\\Qt\\5.0.2\\msvc2012_64\\lib\\cmake\\Qt5Widgets\\")
+	set (Qt5Gui_DIR "C:\\Qt\\5.10.1\\msvc2013_64\\lib\\cmake\\Qt5Gui\\")
+	set (Qt5Widgets_DIR "C:\\Qt\\5.10.1\\msvc2013_64\\lib\\cmake\\Qt5Widgets\\")
 endif(WIN32)	
 
 find_package(Qt5Gui REQUIRED)
