@@ -8,7 +8,7 @@ git clone https://github.com/GrumpyBum/harrier.wallet.git
 
 From Git Clone Directory
 ```
-git submodule add https://github.com/GrumpyBum/harrier.wallet.git shc
+git submodule add https://github.com/GrumpyBum/harrier.coin.git shc
 ```
 
 **3. Build**
